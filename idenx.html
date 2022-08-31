@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="idex.js"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDm6fvl9fWJeNzAuw3467m02lnkDrp4UsU",
+        authDomain: "orbita-b692d.firebaseapp.com",
+        projectId: "orbita-b692d",
+        storageBucket: "orbita-b692d.appspot.com",
+        messagingSenderId: "1066222038419",
+        appId: "1:1066222038419:web:f6462d44d6c102caea0c66",
+        measurementId: "G-Q5RWWJ0DME"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
+    <!-- Only page in the botton-->
+
+<div class="header">
+       <div class="img"> <a href="http://orbita.srv.br/"><img src="img/logo.png" alt="Logo da empresa"></a> </div>
+        <nav>
+            <div class="itens">
+        <ul>
+            <li>
+                <a title="Saiba mais sobre nossa equipe" target="_blank" href="http://orbita.srv.br/">Sobre nós</a>
+            </li>
+            <li>
+                <a title="Nossos serviços" target="_blank" href="http://orbita.srv.br/">Serviços</a>
+            </li>
+            <li>
+                <a title="Nosso suporte" target="_blank" href="http://orbita.srv.br/">Suporte</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+</div>
+
+<main>
+    <div class="firstThing">
+        <div class="text1">
+        <H1>Green Orbita <span>whit you</span>!</H1>
+        <p>Isso é apenas um teste para uma aplicação de Database juntamente com o Dialogoflow. Veremos se vai dar certo ou não, porque realmente isso ta sendo muito legal.</p>
+        <p class="Obs">Obs: Isso não é um comentario </p>
+        </div>
+        <img src="img/6-sinais-de-que-e-hora-de-modernizar-seu-ambiente-de-ti-01.png" alt="Imagens simbolica de um banco de dados de TI verde">
+    </div>
+</main>
+    
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="AgenteTwilight"
+  agent-id="a84e6c3d-97fc-4d81-9749-8cb91927655f"
+  language-code="pt-br"
+></df-messenger>
+
+
+</body>
+</html>
